@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de Yuri Matheus, desenvolvedor front-end.">
+  <title>Yuri Matheus | Desenvolvedor Front-end</title>
+
+  <!-- PERSONALIZE: troque a fonte, se desejar -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Navegação principal">
+      <!-- PERSONALIZE: seu nome ou abreviação -->
+      <a class="logo" href="#inicio" aria-label="Ir para o início">
+        <span class="logo-mark">YM</span>
+        <span>Yuri Matheus</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#inicio">Início</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#skills">Skills</a>
+        <a href="#formacao">Formação</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <button class="theme-toggle" type="button" aria-label="Ativar tema claro" title="Alternar tema">
+        <i data-lucide="moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ===== HERO ===== -->
+    <section class="hero section" id="inicio">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Disponível para novos projetos</p>
+          <!-- PERSONALIZE: saudação e nome -->
+          <h1>Olá, eu sou <strong>Yuri Matheus</strong>.</h1>
+          <!-- PERSONALIZE: cargo ou especialidade -->
+          <h2>Desenvolvedor Front-end &amp; UI Designer</h2>
+          <!-- PERSONALIZE: resumo profissional -->
+          <p class="hero-text">Crio experiências digitais modernas, acessíveis e responsivas, transformando ideias em interfaces rápidas e memoráveis.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Ver Projetos <i data-lucide="arrow-down-right"></i></a>
+            <!-- PERSONALIZE: troque o link pelo seu currículo em PDF ou seção de contato -->
+            <a class="button button-secondary" href="#contato">Entrar em contato <i data-lucide="send"></i></a>
+          </div>
+
+          <div class="hero-proof" aria-label="Destaques">
+            <div><strong>3+</strong><span>Anos criando</span></div>
+            <div><strong>20+</strong><span>Projetos</span></div>
+            <div><strong>100%</strong><span>Comprometido</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Foto de perfil">
+          <div class="profile-frame">
+            <!-- PERSONALIZE: substitua por sua foto -->
+            <div class="profile-placeholder" role="img" aria-label="">
+              <span>YM</span>
+              <small>Yuri Matheus</small>
+            </div>
+          </div>
+          <div class="floating-card floating-card-top">
+            <i data-lucide="code-2"></i>
+            <span><strong>Front-end</strong><small>Clean code</small></span>
+          </div>
+          <div class="floating-card floating-card-bottom">
+            <i data-lucide="sparkles"></i>
+            <span><strong>UI/UX</strong><small>Experiência</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <header class="section-header reveal">
+          <div>
+            <p class="section-kicker">Portfólio selecionado</p>
+            <h2>Trabalhos feitos</h2>
+          </div>
+          <p>Projetos que unem estratégia, design e tecnologia para resolver problemas reais.</p>
+        </header>
+
+        <div class="project-filters reveal" role="group" aria-label="Filtrar projetos">
+          <button class="filter-button active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-button" type="button" data-filter="web">Web</button>
+          <button class="filter-button" type="button" data-filter="dados">Dados / Automação</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PERSONALIZE: copie ou edite este card -->
+          <article class="project-card reveal" data-category="web">
+            <div class="project-thumb thumb-one">
+              <div class="browser-bar"><span></span><span></span><span></span></div>
+              <div class="dashboard-ui"><b></b><b></b><b></b><i></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-number">01</div>
+              <h3>Plataforma Financeira</h3>
+              <p>Simplificou o acompanhamento de despesas pessoais com uma interface clara e indicadores em tempo real.</p>
+              <div class="tags"><span>React</span><span>TypeScript</span><span>Charts</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver demonstração da Plataforma Financeira">Demo <i data-lucide="external-link"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver código da Plataforma Financeira"><i data-lucide="github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-thumb thumb-two">
+              <div class="phone-ui"><span></span><b></b><b></b><i></i></div>
+              <div class="phone-ui phone-back"><span></span><b></b><b></b><i></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-number">02</div>
+              <h3>App de Delivery</h3>
+              <p>Reduziu o tempo de pedido com navegação direta, busca inteligente e checkout otimizado.</p>
+              <div class="tags"><span>Next.js</span><span>API REST</span><span>CSS</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver demonstração do App de Delivery">Demo <i data-lucide="external-link"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver código do App de Delivery"><i data-lucide="github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="dados">
+            <div class="project-thumb thumb-three">
+              <div class="chart-ui"><span style="--h:38%"></span><span style="--h:66%"></span><span style="--h:52%"></span><span style="--h:86%"></span><span style="--h:72%"></span></div>
+            </div>
+            <div class="project-content">
+              <div class="project-number">03</div>
+              <h3>Dashboard de Dados</h3>
+              <p>Centralizou indicadores de vendas e automatizou relatórios para acelerar decisões comerciais.</p>
+              <div class="tags"><span>Python</span><span>SQL</span><span>Power BI</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver demonstração do Dashboard de Dados">Demo <i data-lucide="external-link"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver código do Dashboard de Dados"><i data-lucide="github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="dados">
+            <div class="project-thumb thumb-four">
+              <div class="automation-ui"><i data-lucide="database"></i><b></b><i data-lucide="settings"></i><b></b><i data-lucide="mail"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-number">04</div>
+              <h3>Automação de Processos</h3>
+              <p>Eliminou tarefas repetitivas integrando planilhas, notificações e validação automática de dados.</p>
+              <div class="tags"><span>Python</span><span>APIs</span><span>n8n</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver demonstração da Automação">Demo <i data-lucide="external-link"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Ver código da Automação"><i data-lucide="github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <header class="section-header reveal">
+          <div>
+            <p class="section-kicker">Competências</p>
+            <h2>Minhas skills</h2>
+          </div>
+          <p>Tecnologias e habilidades que uso para construir soluções completas.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <div class="skill-heading"><span><i data-lucide="braces"></i></span><h3>Linguagens &amp; Frameworks</h3></div>
+            <div class="skill-list">
+              <div class="skill-item"><span>HTML &amp; CSS</span><strong>95%</strong><div class="progress"><i style="--level:95%"></i></div></div>
+              <div class="skill-item"><span>JavaScript</span><strong>88%</strong><div class="progress"><i style="--level:88%"></i></div></div>
+              <div class="skill-item"><span>React / Next.js</span><strong>82%</strong><div class="progress"><i style="--level:82%"></i></div></div>
+              <div class="skill-item"><span>Python</span><strong>78%</strong><div class="progress"><i style="--level:78%"></i></div></div>
+            </div>
+          </article>
+
+          <article class="skill-group reveal">
+            <div class="skill-heading"><span><i data-lucide="panels-top-left"></i></span><h3>Ferramentas &amp; DevOps</h3></div>
+            <div class="badges">
+              <span>Git &amp; GitHub</span><span>Figma</span><span>VS Code</span><span>Node.js</span><span>SQL</span><span>Docker</span><span>Vercel</span><span>Notion</span>
+            </div>
+          </article>
+
+          <article class="skill-group reveal">
+            <div class="skill-heading"><span><i data-lucide="users"></i></span><h3>Soft skills</h3></div>
+            <div class="soft-skills">
+              <div><i data-lucide="message-circle"></i><span>Comunicação</span></div>
+              <div><i data-lucide="lightbulb"></i><span>Resolutividade</span></div>
+              <div><i data-lucide="puzzle"></i><span>Colaboração</span></div>
+              <div><i data-lucide="clock-3"></i><span>Organização</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMAÇÃO ===== -->
+    <section class="section" id="formacao">
+      <div class="container">
+        <header class="section-header reveal">
+          <div>
+            <p class="section-kicker">Trajetória</p>
+            <h2>Formação acadêmica</h2>
+          </div>
+          <p>Uma base sólida para aprender, experimentar e evoluir continuamente.</p>
+        </header>
+
+        <div class="timeline">
+          <!-- PERSONALIZE: cursos e instituições -->
+          <article class="timeline-item reveal">
+            <time datetime="2026-2033">2026 — 2033</time>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-status">Em andamento</span>
+              <h3>Engenharia de Computação</h3>
+              <h4>Universidade CEUMA</h4>
+              <p>Desenvolvimento de projetos acadêmicos envolvendo interfaces, bancos de dados, lógica de programação e trabalho em equipe.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <time datetime="2026-2027">2026 — 2027</time>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-status">Concluído</span>
+              <h3>Curso de Programação com JavaScript</h3>
+              <h4>Curso em Vídeo</h4>
+              <p>Estudo prático de fundamentos web, versionamento, acessibilidade e boas práticas de desenvolvimento.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOBBIES ===== -->
+    <section class="section section-muted" id="hobbies">
+      <div class="container">
+        <header class="section-header reveal">
+          <div>
+            <p class="section-kicker">Além do código</p>
+            <h2>Coisas que me inspiram</h2>
+          </div>
+          <p>Também sou movido por curiosidade, movimento e boas histórias.</p>
+        </header>
+
+        <div class="hobbies-grid">
+          <article class="hobby-card reveal"><i data-lucide="chef-hat"></i><h3>Cozinhar</h3><p>Experimentar novas receitas e compartilhar momentos saborosos.</p></article>
+          <article class="hobby-card reveal"><i data-lucide="headphones"></i><h3>Música</h3><p>Descobrir sons e trilhas para todos os momentos.</p></article>
+          <article class="hobby-card reveal"><i data-lucide="dumbbell"></i><h3>Corrida</h3><p>Usar o movimento para renovar as ideias.</p></article>
+          <article class="hobby-card reveal"><i data-lucide="gamepad-2"></i><h3>Games</h3><p>Explorar mundos, mecânicas e trabalho em equipe.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section contact-section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="section-kicker">Vamos conversar</p>
+          <h2>Tem uma ideia ou oportunidade?</h2>
+          <p>Estou aberto a novos projetos, colaborações e conversas sobre tecnologia e design.</p>
+
+          <div class="social-links">
+            <!-- PERSONALIZE: seus links reais -->
+            <a href="https://www.linkedin.com/in/yuri-santos-7686b1415" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="https://github.com/YurIsHigh" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+            <a href="mailto:oyurilima13@gmail.com" aria-label="Enviar e-mail"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Como gostaria de ser chamado?" autocomplete="name" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" autocomplete="email" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-field">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Conte um pouco sobre sua ideia..." required></textarea>
+            <small class="error-message"></small>
+          </div>
+          <button class="button button-primary form-button" type="submit">Enviar mensagem <i data-lucide="send"></i></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yuri Matheus. Todos os direitos reservados.</p>
+      <a href="#top" class="back-top" aria-label="Voltar ao topo">Topo <i data-lucide="arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
